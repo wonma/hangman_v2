@@ -38,7 +38,7 @@
 }
 
 h1 {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .wrapper {
@@ -50,7 +50,7 @@ h1 {
      display: flex;
      width: 90%;
      margin:0 auto;
-     margin-bottom: 4.8rem;
+     margin-bottom: 2rem;
      justify-content: center;
 }
 
@@ -71,12 +71,22 @@ h1 {
      background: #2cc5c5;
 }
 
+.wrong-letters {
+    font-size: 2rem;
+    color: #c9c9c9;
+}
+
+.wrong-letters__text {
+    height: 2rem;
+    margin-bottom: 1.4rem;
+}
+
 .explanation {
     margin:40px 0;
 }
 
 .keypadActivator {
-     width:80%;
+     width: 30rem;
      background: #2B292E;
      color: #fafafa;
      font-family: Helvetica, Arial, sans-serif;
@@ -91,11 +101,35 @@ h1 {
     margin-top: 4rem;
 }
 
+.warning {
+     opacity: 0;
+     height: 3rem;
+     font-weight: 400;
+     color: #ff3d78;
+}
+
+.warning--show {
+    animation: fadeOut 1.4s;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #32e9e9;
     letter-spacing: 1px;
     text-align: center;
     opacity: 1; /* Firefox */
+}
+
+@keyframes fadeOut {
+    0%{
+        opacity: 1
+    }
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
 }
 
 input[type="color"],
